@@ -29,8 +29,8 @@ int main(int argc, char* argv[])
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    int screenWidth = 800;
-    int screenHeight = 450;
+    int screenWidth = 1920;
+    int screenHeight = 1005;
 
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
@@ -42,9 +42,32 @@ int main(int argc, char* argv[])
 
     Critter critters[1000]; 
 
-    // create some critters
-    const int CRITTER_COUNT = 50;
-    const int MAX_VELOCITY = 80;
+
+    //////////////////////////////////////////////
+    // All The Setting For the Critters
+    //////////////////////////////////////////////
+
+
+    const int CRITTER_COUNT = 500; // Setting The Count Of the Critters
+    const int MAX_VELOCITY = 300; // Setting The Max Speed Of the Critters
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     for (int i = 0; i < CRITTER_COUNT; i++)
     {
@@ -190,7 +213,7 @@ int main(int argc, char* argv[])
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
-        ClearBackground(RAYWHITE);
+        ClearBackground(DARKPURPLE);
 
         // draw the critters
         for (int i = 0; i < CRITTER_COUNT; i++)
