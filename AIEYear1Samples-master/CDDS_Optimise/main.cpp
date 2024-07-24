@@ -29,8 +29,8 @@ int main(int argc, char* argv[])
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    int screenWidth = 800;
-    int screenHeight = 450;
+    int screenWidth = 1920;
+    int screenHeight = 1000;
 
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
@@ -190,7 +190,7 @@ int main(int argc, char* argv[])
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
-        ClearBackground(RAYWHITE);
+        ClearBackground(DARKPURPLE);
 
         // draw the critters
         for (int i = 0; i < CRITTER_COUNT; i++)
