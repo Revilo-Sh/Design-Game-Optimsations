@@ -9,25 +9,28 @@ private:
 	T* m_data;
 
 private:
-	void Grow();
+	void Grow(); // used to increase the allocted elements
 
 public:
-	DynamicArray();
+	DynamicArray(); 
 	DynamicArray(const DynamicArray& _other);
 	~DynamicArray();
 
 
-	void PushBack(T num);
-	void PopBack();
+	void PushBack(T num); // Addeds to the end
+	void PopBack(); // Removes from end
 
-	void Insert(T num, int index);
-	void Remove(int index);
+	void Insert(T num, int index); // adds element into a specified index in the arry 
+	void Remove(int index); // removes vaule a index
 
-	void Resize(int size);
+	void Resize(int size); // resoze array to be a size of passed values
 
-	void Clear();
+	void Clear(); // clear the whole array
 
 public:
-	DynamicArray& operator =(const DynamicArray& _other);
+	DynamicArray& operator =(const DynamicArray& other);
 };
+
+
+
 
