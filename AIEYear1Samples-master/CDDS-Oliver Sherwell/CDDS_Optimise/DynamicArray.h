@@ -118,6 +118,13 @@ public:
 	DynamicArray& operator =(const DynamicArray& _others);
 	// LOST THIS
 
+	Critter& operator[](int index) {
+		if (index < m_usedElements) {
+			return critterArray[index];
+		}
+
+	}
+
 };
 
 
