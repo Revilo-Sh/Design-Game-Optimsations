@@ -1,0 +1,1 @@
+my Old SLN file was broken raylib was not working so i striped out Jacob SLN cause his one was working all the code inside of it is mine
