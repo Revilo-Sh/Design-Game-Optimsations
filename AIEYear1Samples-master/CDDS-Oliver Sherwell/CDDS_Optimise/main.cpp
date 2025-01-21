@@ -11,8 +11,8 @@ int main(int argc, char* argv[])
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    int screenWidth = 1920;
-    int screenHeight = 1000;
+    int screenWidth = 960;
+    int screenHeight = 540;
 
 
 
@@ -41,15 +41,6 @@ int main(int argc, char* argv[])
    // Critter critters[1000]; 
 
 
-
-
-
-
-
-
-
-
-
     // create some critters
     const int CRITTER_COUNT = 50;
     const int MAX_VELOCITY = 80;
@@ -61,12 +52,9 @@ int main(int argc, char* argv[])
         // normalize and scale by a random speed
         velocity = Vector2Scale(Vector2Normalize(velocity), MAX_VELOCITY);
 
-
-
-
         // create a critter in a random location
         Critter critter;
-        critter[i].Init(
+        critter.Init(
             { (float)(5+rand() % (screenWidth-10)), (float)(5+(rand() % screenHeight-10)) },
             velocity,
             12, "res/10.png");
@@ -151,6 +139,7 @@ int main(int argc, char* argv[])
             if (dist < jellies[i].GetRadius() + destroyer.GetRadius())
             {
                 jellies[i].Destroy();
+                
                 // this would be the perfect time to put the critter into an object pool
             }
         }
@@ -194,7 +183,7 @@ int main(int argc, char* argv[])
             // find any dead critters and spit them out (respawn)
             for (int i = 0; i < CRITTER_COUNT; i++)
             {
-                if (JellyFish[i].IsDead())
+                if (jellies.CritterExists(i) == false)
                 {
                     Vector2 normal = Vector2Normalize(destroyer.GetVelocity());
 
