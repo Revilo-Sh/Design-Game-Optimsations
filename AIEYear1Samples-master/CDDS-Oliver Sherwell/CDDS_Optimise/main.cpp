@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
         critter.Init(
             { (float)(5+rand() % (screenWidth-10)), (float)(5+(rand() % screenHeight-10)) },
             velocity,
-            12, "res/10.png");
+            12, "JellyFish", &TableHash);
         jellies.PushBack(critter);
     }
 
@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
     Critter destroyer;
     Vector2 velocity = { -100 + (rand() % 200), -100 + (rand() % 200) };
     velocity = Vector2Scale(Vector2Normalize(velocity), MAX_VELOCITY);
-    destroyer.Init(Vector2{ (float)(screenWidth >> 1), (float)(screenHeight >> 1) }, velocity, 20, "res/9.png");
+    destroyer.Init(Vector2{ (float)(screenWidth >> 1), (float)(screenHeight >> 1) }, velocity, 20, "Squids", &TableHash);
 
 
 
@@ -191,7 +191,7 @@ int main(int argc, char* argv[])
                     Vector2 pos = destroyer.GetPosition();
                     pos = Vector2Add(pos, Vector2Scale(normal, -50));
                     // its pretty ineficient to keep reloading textures. ...if only there was something else we could do
-                    jellies[i].Init(pos, Vector2Scale(normal, -MAX_VELOCITY), 12, "res/10.png");
+                    jellies[i].Init(pos, Vector2Scale(normal, -MAX_VELOCITY), 12, "JellyFish", &TableHash);
                     break;
                 }
             }

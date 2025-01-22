@@ -11,7 +11,6 @@ public:
 		return hashTable[hashedKey];
 	}
 
-
 private:
 
 	unsigned int TableSize = 50;
@@ -24,7 +23,5 @@ private:
 		}
 		return hash;
 	}
-
-
 };
 

@@ -21,8 +21,6 @@ private:
 		critterArray = TempArray;
 
 
-
-
 		//Critter* TempArray = new Critter[m_allocatedElmemnts + 2]; // Make a Temp Array we Can put data into
 		//m_allocatedElmemnts = m_allocatedElmemnts * 2; // Added More Allocted Slots
 

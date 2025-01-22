@@ -11,24 +11,24 @@ Critter::Critter()
 
 Critter::~Critter()
 {
-	UnloadTexture(m_texture);
+	//UnloadTexture(m_texture);
 	m_isLoaded = false;
 }
 
-void Critter::Init(Vector2 position, Vector2 velocity, float radius, const char* texture)
+void Critter::Init(Vector2 position, Vector2 velocity, float radius, const char* texture, HashTable* hashtable)
 {
 	m_position = position;
 	m_velocity = velocity;
 	m_radius = radius;
 	
-	m_texture = LoadTexture(texture);	
+	m_texture = (hashtable->operator[](texture));	
 
 	m_isLoaded = true;
 }
 
 void Critter::Destroy()
 {
-	UnloadTexture(m_texture);
+	//UnloadTexture(m_texture);
 	m_isLoaded = false;
 }
 
@@ -49,5 +49,5 @@ void Critter::Draw()
 	if (m_isLoaded == false)
 		return;
 
-	DrawTexture(m_texture, m_position.x, m_position.y, WHITE);
+	DrawTexture(*m_texture, m_position.x, m_position.y, WHITE);
 }
