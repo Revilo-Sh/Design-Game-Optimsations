@@ -7,6 +7,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Raylib", "Raylib\Bindings\R
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CDDS_Optimise", "CDDS_Optimise\CDDS_Optimise.vcxproj", "{5D2738E1-A166-40F6-936E-278C0AC90C7B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest1", "UnitTest1\UnitTest1.vcxproj", "{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,18 @@ Global
 		{5D2738E1-A166-40F6-936E-278C0AC90C7B}.Release|x64.Build.0 = Release|x64
 		{5D2738E1-A166-40F6-936E-278C0AC90C7B}.Release|x86.ActiveCfg = Release|Win32
 		{5D2738E1-A166-40F6-936E-278C0AC90C7B}.Release|x86.Build.0 = Release|Win32
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Debug|Any CPU.Build.0 = Debug|x64
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Debug|x64.ActiveCfg = Debug|x64
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Debug|x64.Build.0 = Debug|x64
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Debug|x86.ActiveCfg = Debug|Win32
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Debug|x86.Build.0 = Debug|Win32
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Release|Any CPU.ActiveCfg = Release|x64
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Release|Any CPU.Build.0 = Release|x64
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Release|x64.ActiveCfg = Release|x64
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Release|x64.Build.0 = Release|x64
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Release|x86.ActiveCfg = Release|Win32
+		{0760AF4E-5846-4B29-B5A4-2A6BAF30B96D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
